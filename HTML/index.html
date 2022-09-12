@@ -1,0 +1,60 @@
+<!DOCTYPE html5>
+<head>
+    <title>Andres website</title>
+    <script type="text/javascript" src=".\Javascript\index.js"></script>
+</head>
+<body>
+    <p>This is the website of Andres</p>
+    <p>Please contact him by:</p>
+    <p>Phone number: 0934132635</p>
+    <p>Viber: +84934132635</p>
+    <button >Press to switch page</button> <br>
+    <input  onclick="test()"> <br>
+    <script>
+        var a = new Function("a","b","return a+b;");
+       // document.writeln(test1(5));
+    //    document.writeln(a(50,100) + "<br>");
+    //    var c = new Object();
+    //    c = {"Ten":"Lâm An Kiện","Tuoi":"25","diaChi":"338/22/13 Âu Cơ, phường 10, quận Tân Bình"};
+    //    document.writeln(c.Ten + "<br>"); 
+    //    document.writeln(c.Tuoi + "<br>");
+    //    document.writeln(c.diaChi + "<br>");
+
+        var array = ["a","b","c"];
+        for(var i = 0; i < array.length;i++)
+        {
+            document.write(array[i] + "<br>");
+        }
+
+
+
+
+       function test2(name,age,address)
+        {
+            this.name = name;
+            this.age = age;
+            this.address = address;
+            this.changeAddress = changeAddress;
+        };
+
+        function changeAddress(newAddress)
+        {
+            this.address = newAddress;
+        }
+
+        emp = new test2("Andres Lâm",25,"338/22/13 Âu Cơ, phường 10, quận Tân Bình");
+        document.writeln(emp.name + "<br>");
+        document.writeln(emp.age + "<br>");
+        document.writeln(emp.address + "<br>");
+
+        emp.changeAddress("178/31 Nguyễn Văn Thương");
+        document.writeln(emp.name + "<br>");
+        document.writeln(emp.age + "<br>");
+        document.writeln(emp.address + "<br>");
+
+
+
+
+    </script><br>
+    <input  onclick="test1(5)"> <br>
+</body>
