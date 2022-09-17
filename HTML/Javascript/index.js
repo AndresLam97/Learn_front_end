@@ -11,9 +11,3 @@ function test1(variable)
     alert(variable*variable*variable);
 }
 
-function test2(name,age,address)
-{
-    this.name = name;
-    this.age = age;
-    this.address = address;
-}

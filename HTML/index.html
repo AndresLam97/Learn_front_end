@@ -1,60 +1,43 @@
 <!DOCTYPE html5>
 <head>
-    <title>Andres website</title>
-    <script type="text/javascript" src=".\Javascript\index.js"></script>
+    <title>Andres Website</title>
+    <script type="text/javascript" src="C:\Users\Andres\Desktop\LearnGit\Learn_front_end\HTML\Javascript\index.js"></script>
 </head>
 <body>
-    <p>This is the website of Andres</p>
-    <p>Please contact him by:</p>
-    <p>Phone number: 0934132635</p>
-    <p>Viber: +84934132635</p>
-    <button >Press to switch page</button> <br>
-    <input  onclick="test()"> <br>
     <script>
-        var a = new Function("a","b","return a+b;");
-       // document.writeln(test1(5));
-    //    document.writeln(a(50,100) + "<br>");
-    //    var c = new Object();
-    //    c = {"Ten":"Lâm An Kiện","Tuoi":"25","diaChi":"338/22/13 Âu Cơ, phường 10, quận Tân Bình"};
-    //    document.writeln(c.Ten + "<br>"); 
-    //    document.writeln(c.Tuoi + "<br>");
-    //    document.writeln(c.diaChi + "<br>");
+        emp = new Function("a","b","return a+b");
+        document.writeln(emp(5,10));
+    </script>
+    <form>
+        <label for="userName">User name: </label>
+        <input id="userName" type="text" name="username" maxlength="30" size="3"> <br>
+        <label for="password">Password: </label>
+        <input id="password" type="password" name="password" maxlength="10" size="3"><br>
+        <label for="comment">Comment: </label>
+        <input type="textarea" maxlength="300" id="comment" cols="20" rows ="20"> <br>
+        <input type="radio" name="programingLanguage" value="C++">C++<br>
+        <input type="radio" name="programingLanguage" value="Java">Java<br>
+        <input type="radio" name="programingLanguage" value="HTML">HTML<br>
+        <input type="radio" name="programingLanguage" value="CSS">CSS<br>
+        <input type="checkbox" name="favorite" value="football"> football <br>
+        <input type="checkbox" name="favorite" value="swim"> swim <br>
+        <input type="checkbox" name="favorite" value="basketball" > basketball <br>
+        <label for="list-box">Select your career: </label>
+        <select name="career">
+            <option value="hardware">hardware</option>
+            <option value="software">software</option>
+            <option value="worker">worker</option>
+            <option value="tailor">tailor</option>
+        </select> <br>
+        <label for="list-box2"> Select your second career: </label> <br>
+        <select name="second-career" multiple="multiple" size = "4">
+            <option value="teacher">teacher</option>
+            <option value="taxi-driver">taxi driver</option>
+            <option value="thief">thief</option>
+            <option value="house-keeper">house keeper</option>
+        </select> <br>
+        <input type="file" name="picture-upload"> <br>
+        <input type="submit" name="submit-page" value="submit"><br>
 
-        var array = ["a","b","c"];
-        for(var i = 0; i < array.length;i++)
-        {
-            document.write(array[i] + "<br>");
-        }
-
-
-
-
-       function test2(name,age,address)
-        {
-            this.name = name;
-            this.age = age;
-            this.address = address;
-            this.changeAddress = changeAddress;
-        };
-
-        function changeAddress(newAddress)
-        {
-            this.address = newAddress;
-        }
-
-        emp = new test2("Andres Lâm",25,"338/22/13 Âu Cơ, phường 10, quận Tân Bình");
-        document.writeln(emp.name + "<br>");
-        document.writeln(emp.age + "<br>");
-        document.writeln(emp.address + "<br>");
-
-        emp.changeAddress("178/31 Nguyễn Văn Thương");
-        document.writeln(emp.name + "<br>");
-        document.writeln(emp.age + "<br>");
-        document.writeln(emp.address + "<br>");
-
-
-
-
-    </script><br>
-    <input  onclick="test1(5)"> <br>
+    </form>
 </body>
